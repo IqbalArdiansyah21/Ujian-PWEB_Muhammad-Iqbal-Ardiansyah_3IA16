@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Book Store</h2>
+
+    <form id="bookForm">
+        <label for="title">Title</label>
+        <input type="text" id="title" required>
+        <label for="author">Author</label>
+        <input type="text" id="author" required>
+        <input type="hidden" id="bookIndex">
+        <button type="button" onclick="addOrUpdateBook()">Add or Update</button>
+        <button type="button" id="clearButton" onclick="clearForm()">Clear</button>
+    </form>
+
+    <div>
+        <h2>Book Lists</h2>
+        <div id="bookContainer" class="card-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
